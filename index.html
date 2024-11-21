@@ -211,9 +211,9 @@
     </header>
 
     <!-- mosaico  -->
-    <section class="px-6 mt-9 lg:mt-16 py-12 lg:py-16">
-      <article class="lg:container mx-auto flex flex-col gap-6 lg:gap-12">
-        <article class="text-center flex flex-col gap-8">
+    <section class="px-6 md:mt-9 lg:mt-12 py-12 lg:py-16">
+      <article class="lg:container mx-auto flex flex-col gap-9 md:gap-12">
+        <article class="text-center flex flex-col gap-6 md:gap-8 lg:gap-12">
           <h2
             class="text-mainBlue text-3xl md:text-4xl lg:text-[60px] font-bold leading-[40px] lg:leading-[70px]"
           >
@@ -226,53 +226,124 @@
             a descubrir un legado cultural único.
           </p>
         </article>
-        <div class="gallery">
-          <div class="flex flex-col gap-4">
-            <div class="grid md:grid-cols-12 gap-4">
-              <div
-                class="md:col-span-4 md:h-[404px] h-[277px] w-full rounded-3xl"
+        <!-- galeria  -->
+        <section class="flex flex-col gap-4">
+          <article class="grid md:grid-cols-12 gap-4">
+            <figure
+              class="md:col-span-4 md:h-[404px] h-[277px] w-full rounded-3xl relative group hover:scale-[0.95] transition-all duration-500"
+            >
+              <img
+                src="./img/museo2.png"
+                alt="Gallery image"
+                class="gallery-image object-cover rounded-3xl group-hover:grayscale transition-all duration-700 ease-in-out mx-auto lg:col-span-4 md:col-span-6 w-full h-full"
+              />
+              <figcaption
+                class="absolute bottom-16 flex flex-col gap-4 items-center w-full justify-center px-12 text-center"
               >
-                <img
-                  src="./img/museo2.png"
-                  alt="Gallery image"
-                  class="gallery-image object-cover rounded-3xl hover:grayscale transition-all duration-700 ease-in-out mx-auto lg:col-span-4 md:col-span-6 w-full h-full"
-                />
-              </div>
-              <div
-                class="md:col-span-8 md:h-[404px] h-[277px] w-full rounded-3xl"
+                <h3 class="text-white text-lg md:text-3xl font-bold">
+                  Soy local
+                </h3>
+
+                <a
+                  href="http://cementeriomuseojuandelcorral.free.nf/local/"
+                  class="px-3 py-1 bg-secondaryBlue rounded-full text-white font-bold transition-all duration-500 hover:bg-mainBlue"
+                  >Conocer</a
+                >
+              </figcaption>
+            </figure>
+            <figure
+              class="md:col-span-8 md:h-[404px] h-[277px] w-full rounded-3xl group relative hover:scale-[0.95] transition-all duration-500"
+            >
+              <img
+                src="./img/museo1.png"
+                alt="Gallery image"
+                class="gallery-image object-cover rounded-3xl group-hover:grayscale transition-all duration-700 ease-in-out mx-auto lg:col-span-8 md:col-span-6 w-full h-full"
+              />
+              <figcaption
+                class="absolute bottom-16 flex flex-col gap-4 items-center w-full justify-center px-12 text-center"
               >
-                <img
-                  src="./img/museo1.png"
-                  alt="Gallery image"
-                  class="gallery-image object-cover rounded-3xl hover:grayscale transition-all duration-700 ease-in-out mx-auto lg:col-span-8 md:col-span-6 w-full h-full"
-                />
-              </div>
-            </div>
-            <div class="grid md:grid-cols-3 grid-cols-1 gap-4">
-              <div class="h-[277px] w-full rounded-3xl">
-                <img
-                  src="./img/museo4.png"
-                  alt="Gallery image"
-                  class="gallery-image object-cover rounded-3xl hover:grayscale transition-all duration-700 ease-in-out mx-auto w-full h-full"
-                />
-              </div>
-              <div class="h-[277px] w-full rounded-3xl">
-                <img
-                  src="./img/museo5.png"
-                  alt="Gallery image"
-                  class="gallery-image object-cover rounded-3xl hover:grayscale transition-all duration-700 ease-in-out mx-auto w-full h-full"
-                />
-              </div>
-              <div class="h-[277px] w-full rounded-3xl">
-                <img
-                  src="./img/museo3.png"
-                  alt="Gallery image"
-                  class="gallery-image object-cover rounded-3xl hover:grayscale transition-all duration-700 ease-in-out mx-auto w-full h-full"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+                <h3 class="text-white text-lg md:text-3xl font-bold">
+                  Prehistoria
+                </h3>
+
+                <a
+                  href="http://cementeriomuseojuandelcorral.free.nf/prehistoria/"
+                  class="px-3 py-1 bg-secondaryBlue rounded-full text-white font-bold transition-all duration-500 hover:bg-mainBlue"
+                  >Conocer</a
+                >
+              </figcaption>
+            </figure>
+          </article>
+          <article class="grid md:grid-cols-3 grid-cols-1 gap-4">
+            <figure
+              class="h-[277px] w-full rounded-3xl group hover:scale-[0.95] transition-all duration-500 relative"
+            >
+              <img
+                src="./img/museo4.png"
+                alt="Gallery image"
+                class="gallery-image object-cover rounded-3xl group-hover:grayscale transition-all duration-700 ease-in-out mx-auto w-full h-full"
+              />
+              <figcaption
+                class="absolute bottom-16 flex flex-col gap-4 items-center w-full justify-center px-12 text-center"
+              >
+                <h3 class="text-white text-lg md:text-3xl font-bold">
+                  Colonia
+                </h3>
+
+                <a
+                  href="http://cementeriomuseojuandelcorral.free.nf/colonia/"
+                  class="px-3 py-1 bg-secondaryBlue rounded-full text-white font-bold transition-all duration-500 hover:bg-mainBlue"
+                  >Conocer</a
+                >
+              </figcaption>
+            </figure>
+            <figure
+              class="h-[277px] w-full rounded-3xl group hover:scale-[0.95] transition-all duration-500 relative"
+            >
+              <img
+                src="./img/museo5.png"
+                alt="Gallery image"
+                class="gallery-image object-cover rounded-3xl group-hover:grayscale transition-all duration-700 ease-in-out mx-auto w-full h-full"
+              />
+              <figcaption
+                class="absolute bottom-16 flex flex-col gap-4 items-center w-full justify-center px-12 text-center"
+              >
+                <h3 class="text-white text-lg md:text-3xl font-bold">
+                  Cementerio
+                </h3>
+
+                <a
+                  href="http://cementeriomuseojuandelcorral.free.nf/?i=1"
+                  class="px-3 py-1 bg-secondaryBlue rounded-full text-white font-bold transition-all duration-500 hover:bg-mainBlue"
+                  >Conocer</a
+                >
+              </figcaption>
+            </figure>
+            <figure
+              class="h-[277px] w-full rounded-3xl group hover:scale-[0.95] transition-all duration-500 relative"
+            >
+              <img
+                src="./img/museo3.png"
+                alt="Gallery image"
+                class="gallery-image object-cover rounded-3xl group-hover:grayscale transition-all duration-700 ease-in-out mx-auto w-full h-full"
+              />
+              <figcaption
+                class="absolute bottom-16 flex flex-col gap-4 items-center w-full justify-center px-12 text-center"
+              >
+                <h3 class="text-white text-lg md:text-3xl font-bold">
+                  Independencia
+                </h3>
+
+                <a
+                  href="http://cementeriomuseojuandelcorral.free.nf/independencia/"
+                  class="px-3 py-1 bg-secondaryBlue rounded-full text-white font-bold transition-all duration-500 hover:bg-mainBlue"
+                  >Conocer</a
+                >
+              </figcaption>
+            </figure>
+          </article>
+        </section>
+        <!-- galeria  -->
       </article>
     </section>
     <!-- mosaico  -->
