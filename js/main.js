@@ -1,3 +1,4 @@
+//Función para animacion de onda para enlaces de la navbar
 function animacionOndaEnlaces() {
   // Capturamos todos los elementos con la clase 'ripple'
   const rippleElements = document.querySelectorAll(".ripple");
@@ -50,7 +51,7 @@ function animacionOndaEnlaces() {
   `;
   document.head.appendChild(style);
 }
-
+//Función para cerrar o abrir menu en vista mobile
 const actionMenu = () => {
   const btnMenu = document.getElementById("btnMenu");
   const menu = document.getElementById("menu");
@@ -63,7 +64,23 @@ const actionMenu = () => {
   });
 };
 
+function startCarrusel() {
+  const $carousel = $(".header");
+  $carousel.slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    dots: false,
+    centerPadding: "0",
+    arrows: false,
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   animacionOndaEnlaces();
   actionMenu();
+  startCarrusel();
 });

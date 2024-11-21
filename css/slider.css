@@ -1,0 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.slick-list,
+.slick-track {
+  height: 100%;
+}

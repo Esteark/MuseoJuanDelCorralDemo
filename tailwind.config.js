@@ -16,6 +16,10 @@ module.exports = {
         title: ['"PT Serif"', "serif"], // Fuente para los títulos
         body: ["Roboto", "sans-serif"], // Fuente para el contenido general
       },
+      backgroundImage: {
+        "custom-gradient":
+          "linear-gradient(0deg, rgba(255,255,255,0.44861694677871145) 0%, rgba(0,0,0,0.4962359943977591) 0%)",
+      },
     },
   },
   plugins: [],
